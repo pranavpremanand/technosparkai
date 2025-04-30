@@ -18,29 +18,31 @@ const ServicesGrid = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {services.map((service, index) => (
-              <div
-                key={index}
-                data-aos="fade-up"
-                className={`relative aspect-square shadow-2xl ${
-                  isDarkMode ? `hovershadowwhite` : `hover:shadow-black`
-                } duration-500 cursor-pointer transition-all transform hover:-translate-x-8 h-full dark:hover:bg-primary hover:bg-primary group dark:bg-darkblack overflow-hidden rounded-xl border border-slate-700`}
-                onMouseEnter={() => setHover(index)}
-                onMouseLeave={() => setHover("")}
-                onClick={() => navigateTo(`/services${service.link}`)}
-              >
+              <div key={index} data-aos="fade-up">
                 <div
-                  className={`absolute ${
-                    hover !== index && isDarkMode ? `sm:flex hidden ` : "hidden"
-                  } -top-[16rem] blur-3xl left-0 w-full h-full dark:bg-footerBackground  active:bg-hidden`}
-                />
-                <div
-                  className={`flex flex-col justify-evenly  min-h-full p-5 darkandlightcardhovertext  text-darkblack dark:text-white`}
+                  className={`relative aspect-square shadow-2xl ${
+                    isDarkMode ? `hovershadowwhite` : `hover:shadow-black`
+                  } duration-500 cursor-pointer transition-all transform hover:-translate-y-2 h-full dark:hover:bg-primary hover:bg-primary group dark:bg-darkblack overflow-hidden rounded-xl border border-slate-700`}
+                  onMouseEnter={() => setHover(index)}
+                  onMouseLeave={() => setHover("")}
+                  onClick={() => navigateTo(`/services${service.link}`)}
                 >
-                  <service.icon className="w-10 h-10 text-primary darkandlightcardhovertext" />
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                  <p className="desc darkandlightcardhovertext">
-                    {service.description}
-                  </p>
+                  <div
+                    className={`absolute ${
+                      hover !== index && isDarkMode
+                        ? `sm:flex hidden `
+                        : "hidden"
+                    } -top-[16rem] blur-3xl left-0 w-full h-full dark:bg-footerBackground  active:bg-hidden`}
+                  />
+                  <div
+                    className={`flex flex-col justify-evenly  min-h-full p-5 darkandlightcardhovertext  text-secondary dark:text-white`}
+                  >
+                    <service.icon className="w-10 h-10 text-primary darkandlightcardhovertext" />
+                    <h3 className="text-xl font-bold mb-2">{service.title}</h3>
+                    <p className="desc darkandlightcardhovertext">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

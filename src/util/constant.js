@@ -225,35 +225,35 @@ export const whyChooseUs = [
 export const testimonials = [
   {
     quote:
-      "We turned to TechnosparkAi to develop a secure blockchain platform for our business, and they did an outstanding job. Their deep expertise and innovative approach allowed us to create a system that enhances transparency and trust across our operations. The project was smooth from start to finish, and their team supported us at every stage. We’re excited to see how this technology can continue to drive our success.",
+      "We turned to TechnosparkAI to develop a secure blockchain platform for our business, and they did an outstanding job. Their deep expertise and innovative approach allowed us to create a system that enhances transparency and trust across our operations. The project was smooth from start to finish, and their team supported us at every stage. We’re excited to see how this technology can continue to drive our success.",
     author: "Michael H., CEO, SecureChain Solutions",
     rating: 5,
     gridClass: "col-span-1",
   },
   {
     quote:
-      "Our team was looking for a development partner who could bring our game concept to life with both creativity and technical excellence. TechnosparkAi delivered exactly that. The game they developed for us has received incredible feedback and is now a favorite among our users. Their attention to detail, responsiveness, and ability to execute our vision made them an invaluable partner in this project.",
+      "Our team was looking for a development partner who could bring our game concept to life with both creativity and technical excellence. TechnosparkAI delivered exactly that. The game they developed for us has received incredible feedback and is now a favorite among our users. Their attention to detail, responsiveness, and ability to execute our vision made them an invaluable partner in this project.",
     author: "Sarah L., Creative Director, PixelPlay Games",
     rating: 5,
     gridClass: "col-span-1",
   },
   {
     quote:
-      "We came to TechnosparkAi to help us create a mobile app for our e-commerce business, and they exceeded our expectations. The team worked closely with us to design and develop an app that’s fast, intuitive, and easy for our customers to use. Thanks to their innovative approach, we’ve seen an increase in user engagement and revenue. We're thrilled with the final product and the ongoing support we've received.",
+      "We came to TechnosparkAI to help us create a mobile app for our e-commerce business, and they exceeded our expectations. The team worked closely with us to design and develop an app that’s fast, intuitive, and easy for our customers to use. Thanks to their innovative approach, we’ve seen an increase in user engagement and revenue. We're thrilled with the final product and the ongoing support we've received.",
     author: "Jonathan M., Founder, StyleHub",
     rating: 5,
     gridClass: "col-span-1",
   },
   {
     quote:
-      "Partnering with TechnosparkAi to implement RPA has been a game-changer for our business. They helped us automate a range of repetitive tasks, which has resulted in significant time savings and greater accuracy. The efficiency boost has been incredible, allowing our team to focus on more strategic work. The process was smooth, and the results have been impressive.",
+      "Partnering with TechnosparkAI to implement RPA has been a game-changer for our business. They helped us automate a range of repetitive tasks, which has resulted in significant time savings and greater accuracy. The efficiency boost has been incredible, allowing our team to focus on more strategic work. The process was smooth, and the results have been impressive.",
     author: "Cynthia T., Operations Manager, FinSolve Corp.",
     rating: 5,
     gridClass: "col-span-1",
   },
   {
     quote:
-      "We worked with TechnosparkAi to build a machine learning model that would help us better predict customer behavior. The team’s expertise in data science and machine learning was evident from day one, and the final product has allowed us to make smarter decisions that have improved our marketing efforts and customer retention. Their collaborative approach and technical knowledge were key to the success of this project.",
+      "We worked with TechnosparkAI to build a machine learning model that would help us better predict customer behavior. The team’s expertise in data science and machine learning was evident from day one, and the final product has allowed us to make smarter decisions that have improved our marketing efforts and customer retention. Their collaborative approach and technical knowledge were key to the success of this project.",
     author: "Alice G., Data Scientist, Insight Marketing",
     rating: 5,
     gridClass: "col-span-1",

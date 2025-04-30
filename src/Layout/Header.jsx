@@ -22,11 +22,11 @@ const Header = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="fixed w-full top-0 !z-50 bg-primary dark:bg-primary/70 shadow-md backdrop-blur-sm">
+    <nav className="fixed w-full top-0 !z-50 bg-white shadow-md backdrop-blur-sm">
       <div className="wrapper">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
-            <Link to="/" className="w-auto text-white">
+            <Link to="/" className="w-auto">
               <img src={logo} alt="logo" className="w-[8rem] md:w-[11rem]" />
             </Link>
           </div>
@@ -43,8 +43,8 @@ const Header = () => {
               <Link
                 key={index}
                 to={path}
-                className={`text-white hover:text-blue-300 capitalize dark:hover:text-blue-300 ${
-                  isActive(path) ? "font-bold dark:text-gray-800" : ""
+                className={`text-black hover:text-primary capitalize ${
+                  isActive(path) ? "font-bold text-primary" : ""
                 }`}
               >
                 {path === "/"
@@ -55,7 +55,7 @@ const Header = () => {
 
             <button
               onClick={navigateTo}
-              className="primary-btn !bg-white !text-darkbackground dark:!text-white dark:!bg-primary"
+              className="primary-btn dark:!text-white dark:!bg-primary"
             >
               Contact Us
             </button>
@@ -78,7 +78,7 @@ const Header = () => {
             </button>
             <button
               onClick={toggleMenu}
-              className="text-gray-900 dark:text-white"
+              className="text-gray-900"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

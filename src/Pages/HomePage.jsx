@@ -27,7 +27,7 @@ const HomePage = () => {
               Welcome to Technospark AI
             </h1>
             <p className="desc mt-4" data-aos="fade-left">
-              At TechnosparkAi, we’re committed to helping businesses embrace
+              At TechnosparkAI, we’re committed to helping businesses embrace
               the future with transformative tech solutions. Whether you're
               looking to streamline processes, enhance user experiences, or
               develop new groundbreaking products, we're here to guide you every

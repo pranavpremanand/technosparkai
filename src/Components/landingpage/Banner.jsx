@@ -54,27 +54,27 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
   return (
     <div className="relative w-full bg-[#060b19] sm:min-h-screen overflow-hidden">
       <div className="absolute left-0 top-0 w-full h-full bg-black/40 sm:hidden flex" />
-      <ReactPlayer
-        url={bannervideo}
-        loop={true}
-        playsinline
-        playing={true}
-        // width="100%"
-        // height="100vh"
-        muted
-        className="object-cover videoplayer"
-        config={{
-          file: {
-            attributes: {
-              style: {
-                // objectFit: "cover",
-                // width: "100vw",
-                // height: "100vh",
+      <div className="h-full w-full sm:absolute inset-0 flex items-center justify-center">
+        <ReactPlayer
+          url={bannervideo}
+          loop={true}
+          playsinline
+          playing={true}
+          muted
+          className="videoplayer-contain"
+          config={{
+            file: {
+              attributes: {
+                style: {
+                  // objectFit: "cover",
+                  // width: "100vw",
+                  // height: "100vh",
+                },
               },
             },
-          },
-        }}
-      />
+          }}
+        />
+      </div>
       <div className="absolute flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
         <div className="">
           <h1 className="max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-white mb-6">

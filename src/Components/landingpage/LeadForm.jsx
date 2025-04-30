@@ -74,7 +74,7 @@ const LeadForm = () => {
 
   return (
     <div id="contact" className="w-full max-w-2xl mx-auto px-4 pt-10 pb-[4rem]">
-      <div className="dark:bg-transparent bg-darkblack p-4 sm:p-7 rounded-xl">
+      <div className="dark:bg-transparent bg-secondary p-4 sm:p-7 rounded-xl">
         <h2 className="text-3xl font-bold mb-8 text-center text-white">
           Schedule A Free Consultation
         </h2>
@@ -93,7 +93,7 @@ const LeadForm = () => {
                 type="text"
                 placeholder="John Doe"
                 {...register("fullName", { required: "Full Name is required" })}
-                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-primary/10 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.fullName && (
                 <p className="text-red-500 text-sm">
@@ -120,7 +120,7 @@ const LeadForm = () => {
                     message: "Invalid email address",
                   },
                 })}
-                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-primary/10 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.email && (
                 <p className="text-red-500 text-sm">{errors.email.message}</p>
@@ -146,7 +146,7 @@ const LeadForm = () => {
                       name: "phoneNumber",
                       required: true,
                       className:
-                        "p-3 !pl-10 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all",
+                        "p-3 !pl-10 rounded-xl bg-primary/10 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all",
                     }}
                   />
                 )}
@@ -169,7 +169,7 @@ const LeadForm = () => {
                 {...register("subject", { required: "Subject is required" })}
                 type="text"
                 placeholder="Subject"
-                className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                className="p-3 rounded-xl bg-primary/10 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
               />
               {errors.subject && (
                 <p className="text-red-500 text-sm">{errors.subject.message}</p>
@@ -189,7 +189,7 @@ const LeadForm = () => {
               placeholder="Tell us about your project or needs..."
               rows="5"
               {...register("message", { required: "Message is required" })}
-              className="p-3 rounded-xl bg-slate-800 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
+              className="p-3 rounded-xl bg-primary/10 text-white border border-slate-600 w-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"
             />
             {errors.message && (
               <p className="text-red-500 text-sm">{errors.message.message}</p>

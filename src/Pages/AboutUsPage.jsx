@@ -11,7 +11,7 @@ const AboutUsPage = () => {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className=" bg-white dark:bg-darkblack">
+    <div className=" bg-white dark:bg-secondary">
       <section className="relative pt-[7rem]  overflow-hidden">
         <div
           className={`absolute ${
@@ -24,12 +24,12 @@ const AboutUsPage = () => {
               <div>
                 <h1
                   data-aos="fade-right"
-                  className="hero-title text-8xl font-bold text-darkblack dark:text-white"
+                  className="hero-title text-8xl font-bold text-secondary dark:text-white"
                 >
                   About Us
                 </h1>
                 <p data-aos="fade-right" className="desc mt-10">
-                  At TechnosparkAi, we’re more than just a technology solutions
+                  At TechnosparkAI, we’re more than just a technology solutions
                   provider—we’re a partner in your journey toward innovation and
                   growth. Our mission is to help businesses like yours unlock
                   the power of technology to solve real-world problems, enhance
@@ -55,7 +55,7 @@ const AboutUsPage = () => {
                 data-aos="fade-left"
                 src={aboutusimg}
                 alt="aboutus-img"
-                className="h-full object-cover"
+                className="h-full aspect-square object-cover"
               />
             </div>
           </div>

@@ -11,7 +11,7 @@ const Portfolio = () => {
   const portfolioTypes = [
     { key: "web", label: "Web Projects" },
     { key: "app", label: "Mobile Apps" },
-    { key: "blockchain", label: "Blockchain" },
+    // { key: "blockchain", label: "Blockchain" },
   ];
 
   const getCurrentPortfolio = () => {
@@ -57,7 +57,7 @@ const Portfolio = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-48 object-cover"
+                className="w-full aspect-square object-cover"
               />
               <div className="p-4">
                 <h3 className="small-heading dark:text-white  mb-2 ">

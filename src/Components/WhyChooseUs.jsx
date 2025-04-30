@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           src={whychooseusimg}
           data-aos="fade-left"
           alt="whychooseusimg"
-          className="rounded-xl h-full object-cover"
+          className="rounded-xl h-full aspect-video object-cover"
         />
       </div>
     </section>

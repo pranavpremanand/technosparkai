@@ -34,7 +34,7 @@ const Highlights = () => {
             {highlights.map((obj) => (
               <div
                 data-aos="fade-left"
-                className="bg-white/10 flex flex-col gap-2 p-5 border text-black dark:text-white border-slate-500 rounded-xl"
+                className="bg-white/10 flex flex-col gap-2 p-5 border text-secondary dark:text-white border-slate-500 rounded-xl"
               >
                 <img src={obj.icon} alt={obj.title} className="w-7 " />
                 <h3 className="small-heading">{obj.title}</h3>

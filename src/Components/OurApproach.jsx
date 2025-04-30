@@ -12,7 +12,7 @@ const OurApproach = () => {
             Our Approach
           </h3>
           <p className="desc mt-4 space-y-4" data-aos="fade-right">
-            At TechnosparkAi, we take a client-first approach to everything we
+            At TechnosparkAI, we take a client-first approach to everything we
             do. Our process begins with understanding your business and your
             goals. We work closely with you to develop a strategy that aligns
             with your vision, ensuring that the solutions we create are
@@ -58,7 +58,7 @@ const OurApproach = () => {
         </div>
         <img
           data-aos="fade-left"
-          className="h-full object-cover"
+          className="h-full aspect-square rounded-2xl object-cover"
           src={ourApproach}
           alt="Our Approach"
         />
