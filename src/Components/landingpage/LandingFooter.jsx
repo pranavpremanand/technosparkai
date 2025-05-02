@@ -24,7 +24,7 @@ const LandingFooter = () => {
               <div className="flex items-center gap-2 mb-4">
                 <img src={logo} alt="logo" className="w-[15rem]" />
               </div>
-              <p className=" text-sm max-w-xs italic font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#FCB51F_40%] to-[#133157_60%]">
+              <p className=" text-sm max-w-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#FCB51F_40%] to-[#133157_60%] font-audiowide">
                 Empowering The Business With Ai
               </p>
             </div>

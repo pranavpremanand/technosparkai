@@ -10,6 +10,9 @@ export default {
         primary: "#FCB51F",
         secondary: "#133157",
       },
+      fontFamily: {
+        audiowide: ["Audiowide", "cursive"],
+      },
       backgroundImage: {
         footerBackground:
           "radial-gradient(circle, rgb(19, 49, 87,1) 0%, rgba(2,8,22,1) 58%);",
