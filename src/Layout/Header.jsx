@@ -27,7 +27,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">
             <Link to="/" className="w-auto">
-              <img src={logo} alt="logo" className="w-[8rem] md:w-[11rem]" />
+              <img src={logo} alt="logo" className="w-[8rem] md:w-[14rem]" />
             </Link>
           </div>
 

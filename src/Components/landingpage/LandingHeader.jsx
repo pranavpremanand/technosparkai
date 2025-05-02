@@ -30,7 +30,7 @@ const LandingHeader = () => {
               duration={1000}
               className="cursor-pointer w-auto "
             >
-              <img src={logo} alt="logo" className="w-[8rem] md:w-[11rem]" />
+              <img src={logo} alt="logo" className="w-[8rem] md:w-[14rem]" />
             </Scrolllink>
           </div>
 

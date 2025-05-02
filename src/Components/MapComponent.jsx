@@ -22,13 +22,11 @@ const MapComponent = () => {
     >
       <MapContainer
         center={position}
-        zoom={14}
+        zoom={4}
         style={{ height: "100%", width: "100%", borderRadius: "0.5rem" }}
+        zoomControl={false}
       >
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <Marker position={position}>
-          <Popup>{companyDetails.address}</Popup>
-        </Marker>
       </MapContainer>
     </div>
   );

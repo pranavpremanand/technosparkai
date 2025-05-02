@@ -84,7 +84,6 @@ const ContactUsPage = () => {
             <div className="space-y-4 desc" data-aos="fade-right">
               <p>Phone: {companyDetails.phone}</p>
               <p>Email: {companyDetails.email}</p>
-              <p>Office Address: {companyDetails.address}</p>
             </div>
           </div>
 
