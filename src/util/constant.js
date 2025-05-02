@@ -80,7 +80,7 @@ import { SiBlockchaindotcom } from "react-icons/si";
 
 export const companyDetails = {
   name: "Technospark AI",
-  email: "abc@xyz.com",
+  email: "info@technosparkaisolutions.com",
   phone: "+91-82477 12844",
   address: "ABC Building, XYZ Street, City, State, Country",
   socialLinks: [
