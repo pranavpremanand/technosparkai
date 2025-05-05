@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import bannervideo from "../../assets/video/bannervideo.mp4";
 import ReactPlayer from "react-player";
 import { useNavigate } from "react-router-dom";
+import logoGif from "../../assets/logo.gif";
 
 const Banner = ({ bannerTitle, bannerDesc }) => {
   const navigate = useNavigate();
@@ -52,10 +53,10 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
   }, [displayHeading, displayParagraph, headingComplete]);
 
   return (
-    <div className="relative w-full bg-[#060b19] sm:min-h-screen overflow-hidden">
-      <div className="absolute left-0 top-0 w-full h-full bg-black/40 sm:hidden flex" />
+    <div className="relative w-full bg-white sm:min-h-screen overflow-hidden">
+      {/* <div className="absolute left-0 top-0 w-full h-full bg-white sm:flex flex" /> */}
       <div className="h-full w-full sm:absolute inset-0 flex items-center justify-center">
-        <ReactPlayer
+        {/* <ReactPlayer
           url={bannervideo}
           loop={true}
           playsinline
@@ -73,11 +74,16 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
               },
             },
           }}
+        /> */}
+        <img
+          src={logoGif}
+          alt=""
+          className="object-contain h-full aspect-square w-full"
         />
       </div>
       <div className="absolute flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
-        <div className="">
-          <h1 className="max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-white mb-6">
+        <div className="text-stroke">
+          <h1 className="max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-black mb-6">
             {displayHeading}
             {cursorPosition === "heading" && (
               <span
@@ -91,7 +97,7 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
           </h1>
 
           <div className="flex flex-col gap-8 pb-5">
-            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-white sm:text-start text-center">
+            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-black sm:text-start text-center">
               {displayParagraph}
               {cursorPosition === "paragraph" && (
                 <span

@@ -180,7 +180,7 @@ export const serviceDetails = [
     description: `
       We engineer mobile experiences that combine flawless performance with intuitive interfaces. Our team specializes in both native (Swift, Kotlin) 
       and cross-platform (React Native, Flutter) development, delivering apps that achieve 4.8+ average app store ratings. We implement rigorous 
-      testing protocols across 200+ device configurations to ensure consistent performance.
+      testing protocols across 70+ device configurations to ensure consistent performance.
 
       Technical highlights:
       - 60fps animation performance
