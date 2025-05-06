@@ -51,12 +51,14 @@ const AboutUsPage = () => {
                   their growth.
                 </p>
               </div>
-              <img
-                data-aos="fade-left"
-                src={aboutusimg}
-                alt="aboutus-img"
-                className="h-full aspect-square object-cover"
-              />
+              <div className="flex flex-col">
+                <img
+                  data-aos="fade-left"
+                  src={aboutusimg}
+                  alt="aboutus-img"
+                  className="flex-1 aspect-square object-cover"
+                />
+              </div>
             </div>
           </div>
         </section>

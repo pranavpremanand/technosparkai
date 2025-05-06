@@ -56,12 +56,14 @@ const OurApproach = () => {
             perform at its best and evolves with your business as it grows.
           </p>
         </div>
-        <img
-          data-aos="fade-left"
-          className="h-full aspect-square rounded-2xl object-cover"
-          src={ourApproach}
-          alt="Our Approach"
-        />
+        <div className="flex flex-col">
+          <img
+            data-aos="fade-left"
+            className="flex-1 aspect-square rounded-2xl object-cover"
+            src={ourApproach}
+            alt="Our Approach"
+          />
+        </div>
       </div>
     </section>
   );

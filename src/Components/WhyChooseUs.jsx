@@ -12,7 +12,6 @@ const WhyChooseUs = () => {
           </h1>
           <ul className="mt-4">
             {whyChooseUs.map((item, index) => {
-              const [title, description] = item.split(": ");
               return (
                 <li
                   key={index}
@@ -20,10 +19,7 @@ const WhyChooseUs = () => {
                   className="flex items-start gap-2 mb-4"
                 >
                   <Check className="text-primary " />
-                  <span className="desc">
-                    <strong className="!font-semibold">{title}:</strong>{" "}
-                    {description}
-                  </span>
+                  <span className="desc">{item}</span>
                 </li>
               );
             })}
