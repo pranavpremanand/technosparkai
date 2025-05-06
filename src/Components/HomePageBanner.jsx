@@ -91,7 +91,7 @@ const HomePageBanner = () => {
           </h1>
 
           <div className="flex flex-col gap-8 pb-5">
-            <p className="text-stroke font-extrabold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-black sm:text-start text-center">
+            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-black sm:text-start text-center">
               {displayParagraph}
               {cursorPosition === "paragraph" && (
                 <span

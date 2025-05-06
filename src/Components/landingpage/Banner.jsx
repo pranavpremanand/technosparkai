@@ -82,8 +82,8 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
         />
       </div>
       <div className="absolute flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
-        <div className="text-stroke">
-          <h1 className="max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-black mb-6">
+        <div className="">
+          <h1 className="text-stroke max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-black mb-6">
             {displayHeading}
             {cursorPosition === "heading" && (
               <span

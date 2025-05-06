@@ -47,7 +47,7 @@ html {
 }
 
 .text-stroke{
-  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: #ffffff;
 }
 

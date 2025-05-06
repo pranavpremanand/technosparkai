@@ -36,7 +36,7 @@ const Highlights = () => {
                 data-aos="fade-left"
                 className="bg-white/10 flex flex-col gap-2 p-5 border text-secondary dark:text-white border-slate-500 rounded-xl"
               >
-                <img src={obj.icon} alt={obj.title} className="w-7 " />
+                <img src={obj.icon} alt={obj.title} className="w-7" />
                 <h3 className="small-heading">{obj.title}</h3>
                 <p className="small-desc">{obj.description}</p>
               </div>

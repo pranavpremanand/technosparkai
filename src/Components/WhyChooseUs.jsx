@@ -29,12 +29,14 @@ const WhyChooseUs = () => {
             })}
           </ul>
         </div>
-        <img
-          src={whychooseusimg}
-          data-aos="fade-left"
-          alt="whychooseusimg"
-          className="rounded-xl h-full aspect-video object-cover"
-        />
+        <div className="flex flex-col">
+          <img
+            src={whychooseusimg}
+            data-aos="fade-left"
+            alt="whychooseusimg"
+            className="rounded-xl aspect-video object-cover flex-1"
+          />
+        </div>
       </div>
     </section>
   );
