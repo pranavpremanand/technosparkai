@@ -61,7 +61,7 @@ const Banner = ({ bannerTitle }) => {
         />
       </div>
       <div className="absolute z-[3] flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
-        <div className="wrapper">
+        <div className="wrapper space-y-6">
           <p className="font-bold font-audiowide text-xl sm:text-4xl text-secondary sm:text-center text-center">
             {displayHeading}
             {cursorPosition === "heading" && (
@@ -88,7 +88,8 @@ const Banner = ({ bannerTitle }) => {
                 </span>
               )}
             </h1>
-            <div className="flex justify-center gap-5 pt-8">
+          </div>
+            <div className="flex justify-center gap-5 md:pt-14">
               <button
                 data-aos="fade-right"
                 onClick={() => navigateTo("/about-us")}
@@ -104,7 +105,6 @@ const Banner = ({ bannerTitle }) => {
                 Contact Us{" "}
               </button>
             </div>
-          </div>
         </div>
       </div>
     </div>

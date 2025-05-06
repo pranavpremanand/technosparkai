@@ -108,11 +108,11 @@ const LandingHeader = () => {
 
       {isMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-white dark:bg-gray-900 text-secondary dark:text-white">
             <Link
               to="/"
               onClick={toggleMenu}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark: hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-base font-medium "
             >
               Home
             </Link>
@@ -125,7 +125,7 @@ const LandingHeader = () => {
               offset={-140}
               duration={1000}
               activeClass="active-link text-primary font-bold"
-              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark: hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium "
             >
               About Us
             </Scrolllink>
@@ -138,13 +138,13 @@ const LandingHeader = () => {
               offset={-140}
               duration={1000}
               activeClass="active-link text-primary font-bold"
-              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium text-gray-900 dark: hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="cursor-pointer block px-3 py-2 rounded-md text-base font-medium "
             >
               Services
             </Scrolllink>
             <Link
               to="/blogs"
-              className="block px-3  pt-2 pb-3 rounded-md text-base font-medium text-gray-900 dark: hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3  pt-2 pb-3 rounded-md text-base font-medium "
             >
               Blogs
             </Link>
@@ -156,7 +156,7 @@ const LandingHeader = () => {
               smooth={true}
               offset={-140}
               duration={1000}
-              className="cursor-pointer block px-3  pt-2 pb-3 rounded-md text-base font-medium text-gray-900 dark: hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="cursor-pointer block px-3  pt-2 pb-3 rounded-md text-base font-medium "
             >
               Contact Us
             </Scrolllink>

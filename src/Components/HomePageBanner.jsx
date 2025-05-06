@@ -56,11 +56,11 @@ const HomePageBanner = () => {
         <img
           src={logo}
           alt=""
-          className="object-contain sm:h-[40%] opacity-30 aspect-square w-2/3 sm:w-full"
+          className="object-contain sm:h-[47%] opacity-30 aspect-square w-2/3 sm:w-full"
         />
       </div>
       <div className="absolute z-[3] flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
-        <div className="wrapper">
+        <div className="wrapper space-y-6">
           <p className="font-bold font-audiowide mx-auto max-w-[19rem] sm:max-w-full text-xl sm:text-4xl text-secondary sm:text-center text-center">
             {displayHeading}
             {cursorPosition === "heading" && (
@@ -87,7 +87,8 @@ const HomePageBanner = () => {
                 </span>
               )}
             </h1>
-            <div className="flex justify-center gap-5 pt-8">
+          </div>
+            <div className="flex justify-center gap-5 md:pt-14">
               <button
                 data-aos="fade-right"
                 onClick={() => navigateTo("/about-us")}
@@ -103,7 +104,6 @@ const HomePageBanner = () => {
                 Contact Us{" "}
               </button>
             </div>
-          </div>
         </div>
       </div>
     </div>
