@@ -63,6 +63,7 @@ const AboutUsPage = () => {
           </div>
         </section>
       </section>
+      
       <div className="relative overflow-hidden">
         <div
           className={`absolute ${
