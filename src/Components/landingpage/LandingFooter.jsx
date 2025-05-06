@@ -11,7 +11,7 @@ const LandingFooter = () => {
   // const isDarkMode = theme === "dark";
 
   return (
-    <div className="relative text-black bg-white z-20 overflow-hidden">
+    <div className="relative text-secondary bg-white z-20 overflow-hidden">
       {/* <div
         className={`absolute ${
           isDarkMode ? `flex` : "hidden"
@@ -19,13 +19,13 @@ const LandingFooter = () => {
       /> */}
       <footer className="w-full  px-4 py-16 md:px-8 z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-4 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-[1fr,auto,auto,auto] gap-8 items-start">
             <div className="col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img src={logo} alt="logo" className="w-[15rem]" />
               </div>
-              <p className=" text-sm max-w-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#FCB51F_40%] to-[#133157_60%] font-audiowide">
-                Empowering The Business With Ai
+              <p className="text-sm max-w-xs font-semibold font-audiowide">
+                EMPOWERING THE BUSINESS WITH Ai
               </p>
             </div>
 
@@ -40,7 +40,7 @@ const LandingFooter = () => {
                     smooth={true}
                     offset={-140}
                     duration={1000}
-                    className="hover:text-gray-300 text-sm"
+                    className="hover:text-primary cursor-pointer text-sm"
                     activeClass="active-link text-blue-300 dark:text-primary"
                   >
                     About Us
@@ -54,7 +54,7 @@ const LandingFooter = () => {
                     smooth={true}
                     offset={-140}
                     duration={1000}
-                    className="hover:text-gray-300 text-sm"
+                    className="hover:text-primary cursor-pointer text-sm"
                   >
                     Services
                   </Scrolllink>
@@ -66,7 +66,7 @@ const LandingFooter = () => {
               <h3 className="font-medium mb-4">Information</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/blog" className="hover:text-gray-300 text-sm">
+                  <Link to="/blog" className="hover:text-primary cursor-pointer text-sm">
                     Blog
                   </Link>
                 </li>
@@ -78,7 +78,7 @@ const LandingFooter = () => {
                     smooth={true}
                     offset={-140}
                     duration={1000}
-                    className="hover:text-gray-300 text-sm"
+                    className="hover:text-primary cursor-pointer text-sm"
                   >
                     Contact US
                   </Scrolllink>
@@ -93,7 +93,7 @@ const LandingFooter = () => {
                   placeholder="Enter email address"
                   className="bg-gray-700 px-4 py-2 rounded-md text-sm flex-grow"
                 />
-                <button className="bg-white text-black px-4 py-2 rounded-md text-sm whitespace-nowrap">
+                <button className="bg-white text-secondary px-4 py-2 rounded-md text-sm whitespace-nowrap">
                   Send a Email
                 </button>
               </div> */}
@@ -116,7 +116,7 @@ const LandingFooter = () => {
                       <FaFacebook className="text-[#1877F2] hover:text-[#1877F2]/80 dark:hover:text-[#1877F2]/90" />
                     )}
                     {obj.icon === FaXTwitter && (
-                      <FaXTwitter className="text-black hover:text-black dark:text-black dark:hover:text-black/80" />
+                      <FaXTwitter className="text-secondary hover:text-secondary dark:text-secondary dark:hover:text-secondary/80" />
                     )}
                     {obj.icon === FaYoutube && (
                       <FaYoutube className="text-[#FF0000] hover:text-[#FF0000]/80 dark:hover:text-[#FF0000]/90" />

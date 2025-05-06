@@ -46,11 +46,6 @@ html {
   }
 }
 
-.text-stroke{
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #ffffff;
-}
-
 .react-tel-input .flag-dropdown {
   background-color: transparent !important;
   border: none !important;

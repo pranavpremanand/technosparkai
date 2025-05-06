@@ -18,7 +18,7 @@ const LandingHeader = () => {
   //   navigate("/contact-us");
   // };
   return (
-    <nav className="fixed w-full top-0 !z-50 bg-white text-black shadow-md backdrop-blur-sm">
+    <nav className="fixed w-full top-0 !z-50 bg-white text-secondary shadow-md backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-5">
           <div className="flex-shrink-0">

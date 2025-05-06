@@ -2,16 +2,15 @@ import React, { useEffect, useState } from "react";
 import bannervideo from "../../assets/video/bannervideo.mp4";
 import ReactPlayer from "react-player";
 import { useNavigate } from "react-router-dom";
-import logoGif from "../../assets/logo.gif";
+import logo from "../../assets/images/logo_icon.png";
 
-const Banner = ({ bannerTitle, bannerDesc }) => {
+const Banner = ({ bannerTitle }) => {
   const navigate = useNavigate();
   const navigateTo = (link) => {
     navigate(link);
   };
-  const headingText = bannerTitle || "Your Trusted Development Partner";
-  const paragraphText =
-    bannerDesc || "Next-Gen Intelligence, Born from the Stars";
+  const headingText = "TECHNOSPARK Ai";
+  const paragraphText = bannerTitle || "Your Trusted Development Partner";
 
   const [displayHeading, setDisplayHeading] = useState("");
   const [displayParagraph, setDisplayParagraph] = useState("");
@@ -53,37 +52,17 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
   }, [displayHeading, displayParagraph, headingComplete]);
 
   return (
-    <div className="relative w-full bg-white sm:min-h-screen overflow-hidden">
-      {/* <div className="absolute left-0 top-0 w-full h-full bg-white sm:flex flex" /> */}
-      <div className="h-full w-full sm:absolute inset-0 flex items-center justify-center">
-        {/* <ReactPlayer
-          url={bannervideo}
-          loop={true}
-          playsinline
-          playing={true}
-          muted
-          className="videoplayer-contain"
-          config={{
-            file: {
-              attributes: {
-                style: {
-                  // objectFit: "cover",
-                  // width: "100vw",
-                  // height: "100vh",
-                },
-              },
-            },
-          }}
-        /> */}
+    <div className="relative w-full bg-white min-h-screen overflow-hidden">
+      <div className="h-full w-full absolute inset-0 flex items-center justify-center">
         <img
-          src={logoGif}
+          src={logo}
           alt=""
-          className="object-contain h-full aspect-square w-full"
+          className="object-contain sm:h-[40%] opacity-30 aspect-square w-2/3 sm:w-full"
         />
       </div>
-      <div className="absolute flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
-        <div className="">
-          <h1 className="text-stroke max-w-6xl mx-auto hero-title sm:text-6xl text-2xl font-bold text-center text-black mb-6">
+      <div className="absolute z-[3] flex justify-center items-center left-0 top-0 w-full h-full pt-[7rem]">
+        <div className="wrapper">
+          <p className="font-bold font-audiowide text-xl sm:text-4xl text-secondary sm:text-center text-center">
             {displayHeading}
             {cursorPosition === "heading" && (
               <span
@@ -94,10 +73,10 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
                 |
               </span>
             )}
-          </h1>
+          </p>
 
           <div className="flex flex-col gap-8 pb-5">
-            <p className="font-bold mx-auto max-w-[19rem] sm:max-w-full text-sm sm:text-xl text-black sm:text-start text-center">
+            <h1 className="hero-title text-3xl sm:text-6xl font-bold text-center text-secondary mb-6">
               {displayParagraph}
               {cursorPosition === "paragraph" && (
                 <span
@@ -108,8 +87,8 @@ const Banner = ({ bannerTitle, bannerDesc }) => {
                   |
                 </span>
               )}
-            </p>
-            <div className="flex justify-center gap-5">
+            </h1>
+            <div className="flex justify-center gap-5 pt-8">
               <button
                 data-aos="fade-right"
                 onClick={() => navigateTo("/about-us")}

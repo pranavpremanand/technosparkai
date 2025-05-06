@@ -11,7 +11,7 @@ const Footer = () => {
   const isDarkMode = theme === "dark";
 
   return (
-    <div className="relative bg-white text-black z-20 overflow-hidden border-t">
+    <div className="relative bg-white text-secondary z-20 overflow-hidden border-t">
       {/* <div
         className={`absolute ${
           isDarkMode ? `flex` : "hidden"
@@ -19,13 +19,13 @@ const Footer = () => {
       /> */}
       <footer className="w-full   py-16  z-10">
         <div className="wrapper">
-          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-4 gap-8 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-[1fr,auto,auto,auto] gap-8 items-start">
             <div className="col-span-1">
               <div className="flex items-center gap-2 mb-4">
                 <img src={logo} alt="logo" className="w-[15rem]" />
               </div>
-              <p className=" text-sm max-w-xs font-semibold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#FCB51F_40%] to-[#133157_60%] font-audiowide">
-                Empowering The Business With Ai
+              <p className="text-sm max-w-xs font-semibold font-audiowide">
+                EMPOWERING THE BUSINESS WITH Ai
               </p>
             </div>
 
@@ -33,17 +33,17 @@ const Footer = () => {
               <h3 className=" font-medium mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/about-us" className=" hover:text-black/80 text-sm">
+                  <Link to="/about-us" className=" hover:text-primary text-sm">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services" className=" hover:text-black/80 text-sm">
+                  <Link to="/services" className=" hover:text-primary text-sm">
                     Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/careers" className=" hover:text-black/80 text-sm">
+                  <Link to="/careers" className=" hover:text-primary text-sm">
                     Careers
                   </Link>
                 </li>
@@ -54,14 +54,14 @@ const Footer = () => {
               <h3 className=" font-medium mb-4">Information</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/blogs" className=" hover:text-black/80 text-sm">
+                  <Link to="/blogs" className=" hover:text-primary text-sm">
                     Blogs
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/contact-us"
-                    className=" hover:text-black/80 text-sm"
+                    className=" hover:text-primary text-sm"
                   >
                     Contact US
                   </Link>
@@ -89,7 +89,7 @@ const Footer = () => {
                       <FaFacebook className="text-[#1877F2] hover:text-[#1877F2]/80 dark:hover:text-[#1877F2]/90" />
                     )}
                     {obj.icon === FaXTwitter && (
-                      <FaXTwitter className="text-black hover:text-black dark:text-black dark:hover:text-black/80" />
+                      <FaXTwitter className="text-secondary hover:text-secondary dark:text-secondary dark:hover:text-primary" />
                     )}
                     {obj.icon === FaYoutube && (
                       <FaYoutube className="text-[#FF0000] hover:text-[#FF0000]/80 dark:hover:text-[#FF0000]/90" />

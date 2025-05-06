@@ -26,16 +26,16 @@ const LandingPage = ({ page }) => {
   const bannerTitle = isWeb
     ? "Innovative Web Development Solutions"
     : "Cutting-Edge Mobile App Development";
-  const bannerDesc = isWeb
-    ? "Building responsive, scalable, and SEO-friendly websites tailored to your business needs."
-    : "Creating intuitive, high-performance mobile applications for iOS and Android platforms.";
+  // const bannerDesc = isWeb
+  //   ? "Building responsive, scalable, and SEO-friendly websites tailored to your business needs."
+  //   : "Creating intuitive, high-performance mobile applications for iOS and Android platforms.";
 
   return (
     <>
       <WhatsAppIcon />
       <LandingHeader />
       <div id="banner" className="bg-white dark:bg-darkblack">
-        <Banner bannerTitle={bannerTitle} bannerDesc={bannerDesc} />
+        <Banner bannerTitle={bannerTitle} />
         <section id="about-us">
           <div className="wrapper grid md:grid-cols-2 gap-10 paddingtop paddingbottom">
             <div className="flex flex-col h-full max-h-[24rem] overflow-hidden">

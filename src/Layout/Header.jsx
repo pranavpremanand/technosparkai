@@ -43,7 +43,7 @@ const Header = () => {
               <Link
                 key={index}
                 to={path}
-                className={`text-black hover:text-primary capitalize ${
+                className={`text-secondary hover:text-primary capitalize ${
                   isActive(path) ? "font-bold text-primary" : ""
                 }`}
               >
@@ -103,7 +103,7 @@ const Header = () => {
                 key={index}
                 to={path}
                 onClick={toggleMenu}
-                className={`block px-3 py-2 capitalize rounded-md text-base font-medium text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 ${
+                className={`block px-3 py-2 capitalize rounded-md text-base font-medium text-secondary dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 ${
                   isActive(path) ? "bg-gray-100 dark:bg-gray-800" : ""
                 }`}
               >
