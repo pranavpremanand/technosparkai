@@ -25,7 +25,7 @@ const Footer = () => {
                 <div className="flex items-center gap-2 mb-4">
                   <img src={logo} alt="logo" className="w-[15rem]" />
                 </div>
-                <p className="text-sm max-w-xs font-semibold font-audiowide uppercase">
+                <p className="text-[.92rem] max-w-xs font-semibold font-audiowide uppercase self-end">
                   Igniting Intelligence
                 </p>
               </div>
