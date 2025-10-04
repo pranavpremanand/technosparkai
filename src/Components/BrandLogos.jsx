@@ -53,6 +53,8 @@ const BrandLogos = () => {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
   });
+
+  return null;
   return (
     <div className="relative pt-[3rem] pb-[2rem]">
       <div className="relative z-10">
