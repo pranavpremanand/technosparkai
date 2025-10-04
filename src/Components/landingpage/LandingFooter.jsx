@@ -20,13 +20,15 @@ const LandingFooter = () => {
       <footer className="w-full  px-4 py-16 md:px-8 z-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-[1fr,auto,auto,auto] gap-8 items-start">
-            <div className="col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="logo" className="w-[15rem]" />
+            <div className="col-span-1 flex justify-start">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center gap-2 mb-4">
+                  <img src={logo} alt="logo" className="w-[15rem]" />
+                </div>
+                <p className="text-sm max-w-xs font-semibold font-audiowide uppercase">
+                  Igniting Intelligence
+                </p>
               </div>
-              <p className="text-sm max-w-xs font-semibold font-audiowide uppercase">
-              Igniting Intelligence
-              </p>
             </div>
 
             <div className="col-span-1">
@@ -66,7 +68,10 @@ const LandingFooter = () => {
               <h3 className="font-medium mb-4">Information</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/blog" className="hover:text-primary cursor-pointer text-sm">
+                  <Link
+                    to="/blog"
+                    className="hover:text-primary cursor-pointer text-sm"
+                  >
                     Blog
                   </Link>
                 </li>

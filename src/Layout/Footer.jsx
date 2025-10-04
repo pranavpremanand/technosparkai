@@ -20,13 +20,15 @@ const Footer = () => {
       <footer className="w-full   py-16  z-10">
         <div className="wrapper">
           <div className="grid grid-cols-1 md:grid-cols-3  xl:grid-cols-[1fr,auto,auto,auto] gap-8 items-start">
-            <div className="col-span-1">
-              <div className="flex items-center gap-2 mb-4">
-                <img src={logo} alt="logo" className="w-[15rem]" />
+            <div className="col-span-1 flex justify-start">
+              <div className="flex flex-col items-center">
+                <div className="flex items-center gap-2 mb-4">
+                  <img src={logo} alt="logo" className="w-[15rem]" />
+                </div>
+                <p className="text-sm max-w-xs font-semibold font-audiowide uppercase">
+                  Igniting Intelligence
+                </p>
               </div>
-              <p className="text-sm max-w-xs font-semibold font-audiowide uppercase">
-                Igniting Intelligence
-              </p>
             </div>
 
             <div className="col-span-1">
