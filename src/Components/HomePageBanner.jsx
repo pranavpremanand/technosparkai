@@ -9,7 +9,8 @@ const HomePageBanner = () => {
     navigate(link);
   };
   const headingText = "TECHNOSPARK Ai";
-  const paragraphText = "Shaping the Future with Innovative Technology";
+  const paragraphText = "Igniting Intelligence";
+  // const paragraphText = "Shaping the Future with Innovative Technology";
 
   const [displayHeading, setDisplayHeading] = useState("");
   const [displayParagraph, setDisplayParagraph] = useState("");
